@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup">
+    <h1>Chess Pressure Heatmap</h1>
+
+    <div class="row">
+      <label class="toggle-label">
+        <input type="checkbox" id="toggle" checked>
+        <span>Enabled</span>
+      </label>
+    </div>
+
+    <div class="section">
+      <h2>Orientation</h2>
+      <div class="radio-group">
+        <label>
+          <input type="radio" name="orientation" value="auto" checked>
+          Auto-detect
+        </label>
+        <label>
+          <input type="radio" name="orientation" value="w">
+          White (bottom)
+        </label>
+        <label>
+          <input type="radio" name="orientation" value="b">
+          Black (bottom)
+        </label>
+      </div>
+    </div>
+
+    <div class="section">
+      <button id="calibrateBtn" class="btn">Calibrate Grid</button>
+    </div>
+
+    <div class="section legend">
+      <h2>Legend</h2>
+      <div class="legend-item">
+        <span class="swatch" style="background: rgba(255,180,0,0.5);"></span>
+        Contested square — net pressure shown as number
+      </div>
+      <div class="legend-item">
+        <span class="swatch green"></span>
+        Positive net — you dominate
+      </div>
+      <div class="legend-item">
+        <span class="swatch red"></span>
+        Negative net — they dominate
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

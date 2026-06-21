@@ -1,0 +1,13 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Local dev / debugging artifacts
+.playwright-mcp/
+screenshot.png
+*.log
