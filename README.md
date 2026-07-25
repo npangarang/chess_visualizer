@@ -22,6 +22,12 @@ A Chrome MV3 extension that overlays a per-square "pressure" heatmap on chess.co
 - Contested squares (defended and attacked) get the debug treatment with the net-pressure number on top
 - Toolbar popup: toggle on/off, force orientation (white / black / auto), refresh
 
+## Screenshot
+
+![Heatmap on Giuoco Piano midgame position](assets/chess_heatmap_screenshot.png)
+
+*Italian Game (Giuoco Piano) after 4. c3 — contested squares show net-pressure numbers with red→yellow→green coloring. Red squares favour Black, green favour White, yellow is balanced.*
+
 ## Architecture
 
 This is intentionally a **no-build** project. No `package.json`, no bundler, no linter, no test runner. Plain JS files loaded directly by Chrome.
